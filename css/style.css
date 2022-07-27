@@ -39,8 +39,25 @@ section {
   text-align: center;
   padding: 1.5rem 0;
   font-size: 2.5rem;
-  color: #FFF;
+  color: #fff;
   opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading div {
+  padding-left: 10px;
+}
+
+.heading a{
+  margin-right: 10px;
+  color: #FFF;
+  font-size: 20px;
+}
+
+.heading a:hover{
+  color: var(--secondary-color);
 }
 
 .btn {
@@ -53,14 +70,13 @@ section {
   cursor: pointer;
   font-size: 2rem;
   text-align: center;
-
 }
 
 .btn:hover {
   font-weight: bold;
   border: 0.3rem solid var(--secondary-color);
   background-color: var(--primary-color);
-  color: #FFF;
+  color: #fff;
 }
 
 header {
@@ -160,7 +176,7 @@ header .icons i:hover {
   box-shadow: 5px 5px 5px #dbd9d9;
   padding: 10px;
   border-radius: 10px;
-  border: 3px solid #FFF;
+  border: 3px solid #fff;
   width: 100vh;
 }
 
@@ -187,7 +203,7 @@ header .icons i:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   position: relative;
   margin-top: 10px;
-  transition: transform 0.3s
+  transition: transform 0.3s;
 }
 
 .dest-cat .container .card:hover {
@@ -201,7 +217,7 @@ header .icons i:hover {
 }
 
 .dest-cat .container .card .content {
-  padding: .5rem;
+  padding: 0.5rem;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -211,7 +227,7 @@ header .icons i:hover {
 
 .dest-cat .container .card .content h3 {
   font-size: 2rem;
-  color: #FFF;
+  color: #fff;
   text-align: center;
 }
 
@@ -234,28 +250,28 @@ header .icons i:hover {
   height: 25rem;
   width: 100%;
   object-fit: cover;
-  transition: transform 0.3s
+  transition: transform 0.3s;
 }
 
 .packages .container .card img:hover {
- transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.packages .container .card .location{
+.packages .container .card .location {
   position: absolute;
-  top:48%;
+  top: 48%;
   width: 100%;
-} 
+}
 
-.packages .container .card .location .location-control{
-   display: flex;
-   justify-content: space-around;
-   justify-items: center;
+.packages .container .card .location .location-control {
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
 }
 
 .packages .container .card .location-control i {
   font-size: 15px;
-  color: #FFF
+  color: #fff;
 }
 
 .packages .container .card .location-control i span {
@@ -272,7 +288,6 @@ header .icons i:hover {
   justify-content: space-between;
   align-items: center;
 }
-
 
 .packages .container .card .content .name h3 {
   font-size: 2rem;
@@ -403,16 +418,39 @@ header .icons i:hover {
 
 .services .container {
   margin-top: 1%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.services .grid {
+  padding: 30px;
+}
+
+.services .grid > *:first-child {
+  grid-column: 1 / span 3;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+}
+
+.services .grid > *:nth-child(2) {
+  grid-column: 1 / span 2;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
 }
 
 .services .container .card {
-  flex: 1 1 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   border-radius: 0.5rem;
   padding: 1rem;
   text-align: center;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1);
 }
 
 .services .container .card i {
@@ -421,19 +459,26 @@ header .icons i:hover {
   color: var(--secondary-color);
 }
 
-.services .container .card h3 {
-  font-size: 2.5rem;
-  color: rgb(0, 0, 0);
-}
-
 .services .container .card p {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
-  padding: 1rem 0;
+  padding: 0rem 1rem;
+}
+
+.services .container .card p span {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  font-weight: bold;
 }
 
 .services .container .card:hover {
-  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-color);
+}
+
+.services .container .card:hover p,
+.services .container .card:hover i,
+.services .container .card:hover span {
+  color: #fff;
 }
 
 .contact .row {
@@ -442,17 +487,16 @@ header .icons i:hover {
   justify-content: center;
 }
 
-.contact .row h1{
+.contact .row h1 {
   padding-top: 20px;
   font-size: 30px;
 }
 
-.contact .row p{
+.contact .row p {
   padding-bottom: 10px;
 }
 
-
-.contact .row .btn-contact{
+.contact .row .btn-contact {
   display: block;
   padding: 5px 5px;
   font-weight: bold;
@@ -462,7 +506,6 @@ header .icons i:hover {
   cursor: pointer;
   font-size: 20px;
   text-align: center;
-
 }
 
 .contact .row .image {
