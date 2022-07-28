@@ -7,7 +7,7 @@
 }
 
 * {
-  font-family: 'Open Sans', sans-serif;;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -50,13 +50,13 @@ section {
   padding-left: 10px;
 }
 
-.heading a{
+.heading a {
   margin-right: 10px;
-  color: #FFF;
+  color: #fff;
   font-size: 20px;
 }
 
-.heading a:hover{
+.heading a:hover {
   color: var(--secondary-color);
 }
 
@@ -561,61 +561,244 @@ header .icons i:hover {
 
 /* media queries  */
 
-@media (max-width: 1200px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (max-width: 992px) {
   html {
-    font-size: 55%;
-  }
-}
-
-@media (max-width: 991px) {
-  header {
-    padding: 2rem;
+    font-size: 50%;
+    overflow-x: auto;
   }
 
   section {
     padding: 2rem;
   }
-}
-
-@media (max-width: 768px) {
-  #menu-bar {
-    display: initial;
-  }
-
-  header .navbar {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    background: #333;
-    border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
-    padding: 1rem 2rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-
-  header .navbar.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
 
   header .navbar a {
-    display: block;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    background: #222;
+    font-size: 10px;
+  }
+
+  header .icons {
+    font-size: 10px;
+  }
+
+  .home {
+    height: auto;
+    width: auto;
+  }
+
+  .home .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+    opacity: 0.85;
+    margin-top: 100px;
+  }
+
+  .home .video-container video {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: -1;
+    height: 70vh;
+    width: 100%;
+    object-fit: none;
+  }
+
+  .search {
+    position: absolute;
+    height: auto;
+    bottom: 50px;
+    width: 100%;
+    /* z-index: 100; */
+  }
+
+  .search .search-control .form-control {
+    display: flex;
+  }
+
+  .search .form-control input[type="text"],
+  .search .form-control input[type="date"] {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .dest-cat .container {
+    display: flex;
+    margin-top: 1%;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .services .container {
+    margin-top: 1%;
+    display: grid;
+  }
+
+  .dest-cat .container .card {
+    flex: 1 1 20rem;
   }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 50%;
+    overflow-x: auto;
   }
 
-  .heading span {
-    font-size: 2.5rem;
+  section {
+    padding: 2rem;
   }
 
-  .contact .row form .inputBox input {
+  header {
+    display: block;
+  }
+  header .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  header .navbar a {
+    display: block;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+  header .icons {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  .home .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+    opacity: 0.85;
+    margin-top: -50px;
+  }
+
+  .home .video-container video {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: -1;
+    height: 60vh;
     width: 100%;
+    object-fit: none;
+  }
+
+  .search {
+    position: absolute;
+    height: auto;
+    bottom: 20px;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .search .search-control .form-control {
+    display: block;
+  }
+
+  .search .form-control input[type="text"],
+  .search .form-control input[type="date"] {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .dest-cat {
+    margin-top: 20px;
+  }
+  .dest-cat .container {
+    display: flex;
+    margin-top: 1%;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .dest-cat .container .card {
+    flex: 1 1 30rem;
+  }
+
+  .services .container {
+    margin-top: 1%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 50%;
+    overflow-x: auto;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  header {
+    display: block;
+  }
+  header .navbar {
+    display: block;
+    margin-top: 10px;
+  }
+  header .navbar a {
+    display: block;
+    padding-left: 10px;
+  }
+
+  header .icons {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  .home {
+    height: auto;
+    width: auto;
+  }
+
+  .home .content h3 {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+    opacity: 0.85;
+    margin-top: 100px;
+  }
+
+  .home .video-container video {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    z-index: -1;
+    height: 40vh;
+    width: 100%;
+    object-fit: none;
+  }
+
+  .search {
+    position: absolute;
+    height: auto;
+    bottom: 30px;
+    width: 100%;
+    /* z-index: 100; */
+  }
+
+  .search .search-control .form-control {
+    display: block;
+  }
+
+  .search .form-control input[type="text"],
+  .search .form-control input[type="date"] {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .dest-cat .container {
+    display: block;
+    margin-top: 1%;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .services .container {
+    margin-top: 1%;
+    display: block;
   }
 }
