@@ -18,11 +18,6 @@
   transition: all 0.2s linear;
 }
 
-*::selection {
-  background: var(--primary-color);
-  color: #fff;
-}
-
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -302,6 +297,7 @@ header .icons i:hover {
   font-size: 1.7rem;
   color: #666;
   padding: 1rem 0;
+  text-transform: none;
 }
 
 .packages .container .card .content .name .stars i {
@@ -358,6 +354,7 @@ header .icons i:hover {
   padding: 2rem;
   opacity: 0;
   transition: 1s;
+  text-transform: none;
 }
 
 .recommended .container .card:hover .content {
@@ -373,6 +370,7 @@ header .icons i:hover {
   font-size: 1.5rem;
   color: #eee;
   padding: 0.5rem 0;
+  text-transform: none;
 }
 
 .services .container {
@@ -422,6 +420,7 @@ header .icons i:hover {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
   padding: 0rem 1rem;
+  text-transform: none;
 }
 
 .services .container .card p span {

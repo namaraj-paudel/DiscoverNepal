@@ -68,6 +68,7 @@
 .site-list .container .card .content p {
   font-size: 15px;
   line-height: 1.5;
+  text-transform: none;
 }
 .site-list .container .card .location {
   padding: 10px 0px;

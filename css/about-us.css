@@ -32,6 +32,7 @@
   margin-top: 20px;
   margin-left: 5px;
   line-height: 1.5;
+  text-transform: none;
 }
 
 .about-us .team {
