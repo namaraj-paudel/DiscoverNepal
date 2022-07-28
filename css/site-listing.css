@@ -1,32 +1,101 @@
 .cover_image {
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 0;
-  }
-  
-  .cover_image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 50vh;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  
-  .cover_image .content {
-    font-size: 4rem;
-    color: #fff;
-    text-transform: capitalize;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
-    opacity: 0.85;
-    position: absolute;
-    bottom: 0;
-  }
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
 
-  
-  
+.cover_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cover_image .content {
+  font-size: 4rem;
+  color: #fff;
+  text-transform: capitalize;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+  opacity: 0.85;
+  position: absolute;
+  bottom: 0;
+}
+
+.site-list .container {
+  display: flex;
+  margin-top: 1%;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items:flex-start;
+
+}
+
+.site-list .container .card {
+  width: 550px;
+  height: auto;
+  box-shadow: 0px 0px 5px 0px;
+  border-radius: 5px;
+  margin: 20px 10px;
+}
+
+.site-list .container .card:hover {
+  box-shadow: 0px 0px 5px 1px;
+  background-color: #FFF;
+  cursor: pointer;
+}
+
+.site-list .container .card img {
+  height: 30rem;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.site-list .container .card h4 {
+  font-size: 25px;
+  padding: 10px 10px;
+}
+.site-list .container .card .content {
+  padding: 10px;
+  width: 100%;
+}
+
+.site-list .container .card .content p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.site-list .container .card .location {
+  padding: 10px 0px;
+}
+
+.site-list .container .card .location .location-control {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.site-list .container .card .location-control i {
+  font-size: 15px;
+  color: var(--secondary-color);
+}
+
+.site-list .container .card .location-control i span {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.booknow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.booknow a {
+  padding: 5px 100px;
+}

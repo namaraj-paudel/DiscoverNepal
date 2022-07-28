@@ -1,0 +1,76 @@
+
+.cover_image {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .cover_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .cover_image .content {
+    font-size: 4rem;
+    color: #fff;
+    text-transform: capitalize;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+    opacity: 0.85;
+    position: absolute;
+    bottom: 0;
+  }
+
+.book .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.book .row .place {
+  flex: 1 1 40rem;
+}
+
+.book .row .place img {
+  width: 100%;
+}
+
+.book .row form {
+  flex: 1 1 40rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.book .row form .inputBox {
+  padding: 0.5rem 0;
+}
+
+.book .row form .inputBox:first-child input {
+    cursor: not-allowed;
+}
+
+.book .row form .inputBox input {
+  width: 100%;
+  padding: 1.05rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1.7rem;
+  color: #333;
+  text-transform: none;
+}
+
+.book .row form .inputBox h3 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #666;
+}
